@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj": {}
+    "C:\\Users\\Lntinfotech\\Projects\\EFCheckpoint2\\School\\App\\App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj": {
+    "C:\\Users\\Lntinfotech\\Projects\\EFCheckpoint2\\School\\App\\App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj",
+        "projectUniqueName": "C:\\Users\\Lntinfotech\\Projects\\EFCheckpoint2\\School\\App\\App.csproj",
         "projectName": "App",
-        "projectPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj",
+        "projectPath": "C:\\Users\\Lntinfotech\\Projects\\EFCheckpoint2\\School\\App\\App.csproj",
         "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\obj\\",
+        "outputPath": "C:\\Users\\Lntinfotech\\Projects\\EFCheckpoint2\\School\\App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"

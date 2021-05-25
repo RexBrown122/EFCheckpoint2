@@ -41,11 +41,14 @@ namespace App
             });
 
             // Returning the student with the highest AVG
-            Console.WriteLine("\nFind the student with the highest average.");
+            Console.WriteLine("\nFind the student with the highest average:");
             var queryHighestAvg = db.Student.OrderByDescending(val => val.GradesList.Average(val => (int)val.GradeNum)).FirstOrDefault();
             Console.WriteLine($"{queryHighestAvg.FirstName} has the highest average: {queryHighestAvg.GradesList.Average(val => (int)val.GradeNum)}");
 
             // Student with the most courses
+            Console.WriteLine("\nStudent with the most courses:");
+            var HighCourseStudent = db.Student.OrderByDescending(student => student.GradesList.Count).FirstOrDefault();
+            Console.WriteLine($"{HighCourseStudent.FirstName} {HighCourseStudent.LastName} has the most courses at {HighCourseStudent.GradesList.Count} courses");
 
             // Student that has ZERO courses
             Console.WriteLine("\nStudent That Has Zero Courses:");
