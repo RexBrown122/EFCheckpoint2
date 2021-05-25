@@ -45,6 +45,12 @@ namespace App
             // Student with the most courses
 
             // Student that has ZERO courses
+            Console.WriteLine("\nStudent That Has Zero Courses:");
+            var studentWithNoCourses = db.Student.Where(x => x.GradesList.Count == 0).FirstOrDefault();
+            if (studentWithNoCourses != null)
+                Console.WriteLine(
+                    $"Student {studentWithNoCourses.FirstName} {studentWithNoCourses.LastName} Has NO Courses");
+            
 
             // Total number of Freshmen
             Console.WriteLine("\nFreshman Count:");
