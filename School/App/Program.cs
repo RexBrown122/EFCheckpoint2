@@ -57,14 +57,16 @@ namespace App
                 Console.WriteLine(
                     $"Student {studentWithNoCourses.FirstName} {studentWithNoCourses.LastName} Has NO Courses");
             
-
             // Total number of Freshmen
             Console.WriteLine("\nFreshman Count:");
             var freshmenCount = db.Student.Where(student => student.ClassYear.Equals(Classification.Freshman)).ToList().Count();
             Console.WriteLine($"Total number of Freshmen: {freshmenCount}");
 
             // AVG grade of all Sophomores
-
+            Console.WriteLine("\nAverage Grade Of All Sophomores");
+            var avgGradeOfAllSophomores = db.Student.Where(student => student.ClassYear == Classification.Sophomore).Average(student => student.GradesList.Average(x=>(int)x.GradeNum));
+            Console.WriteLine(avgGradeOfAllSophomores);
+            
             Console.WriteLine();
         }
     }
