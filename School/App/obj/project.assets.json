@@ -1110,26 +1110,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\Lntinfotech\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RiderProjects\\EFCheckpoint2\\School\\App\\App.csproj",
+      "projectUniqueName": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj",
       "projectName": "App",
-      "projectPath": "D:\\RiderProjects\\EFCheckpoint2\\School\\App\\App.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "D:\\RiderProjects\\EFCheckpoint2\\School\\App\\obj\\",
+      "projectPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\App.csproj",
+      "packagesPath": "C:\\Users\\Lntinfotech\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lntinfotech\\Documents\\DotNet\\efcheckpoint2\\school\\app\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Lntinfotech\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1180,7 +1178,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
