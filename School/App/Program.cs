@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using App.Data;
+using App.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace App
@@ -13,15 +14,46 @@ namespace App
         {
             var db = new DataContext();
 
-            var student1 = db.Student.Where(x => x.Id < 6).Select(x => new { Name=x.FirstName , Grades=x.GradesList}).ToList();
-            student1.ForEach(x =>
+            // Returning a list of students
+            Console.WriteLine("\nList of all students:");
+            db.Student.ToList().ForEach(student => Console.WriteLine($"Student Name: {student.FirstName} {student.LastName}"));
+
+            // Returning students and their grades
+            Console.WriteLine("\nStudents and their grades:");
+            var students = db.Student.Where(x => x.Id < 6).Select(x => new { Name=x.FirstName , Grades=x.GradesList}).ToList();
+            students.ForEach(x =>
             {
                 StringBuilder hold = new StringBuilder();
                 x.Grades.ToList().ForEach(grade => hold.Append(grade.GradeNum + " "));
                 Console.WriteLine($"Student {x.Name} Has Grades {hold.ToString(0,hold.Length)}");
             });
-            
 
+            // Returning students and their AVG grades
+            Console.WriteLine("\nFind each students' average grade:");
+            var queryAvgGrade = db.Student.OrderByDescending(val => val.GradesList.Average(val => (int)val.GradeNum));
+            queryAvgGrade.ToList().ForEach(student => {
+                if(student.GradesList != null){
+                    Console.WriteLine($"{student.FirstName}'s average grade is {student.GradesList.Average(val => (int)val.GradeNum)}");
+                }
+                else{
+                    Console.WriteLine($"{student.FirstName} has no courses.");
+                }
+            });
+
+            // Returning the student with the highest AVG
+
+            // Student with the most courses
+
+            // Student that has ZERO courses
+
+            // Total number of Freshmen
+            Console.WriteLine("\nFreshman Count:");
+            var freshmenCount = db.Student.Where(student => student.ClassYear.Equals(Classification.Freshman)).ToList().Count();
+            Console.WriteLine($"Total number of Freshmen: {freshmenCount}");
+
+            // AVG grade of all Sophomores
+
+            Console.WriteLine();
         }
     }
 }
